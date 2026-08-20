@@ -1,0 +1,264 @@
+.commercial-location-section {
+    padding: 90px 8%;
+    background: #ffffff;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.commercial-location-container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.commercial-location-heading {
+    max-width: 850px;
+    margin: 0 auto 60px;
+
+    text-align: center;
+}
+
+.commercial-location-tag {
+    display: inline-block;
+
+    padding: 8px 20px;
+    margin-bottom: 18px;
+
+    background: #dbeafe;
+    color: #1d4ed8;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.commercial-location-heading h2 {
+    margin: 0 0 18px;
+
+    color: #1f2937;
+
+    font-size: 42px;
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+.commercial-location-heading p {
+    margin: 0;
+
+    color: #6b7280;
+
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   GRID
+========================================= */
+
+.commercial-location-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.commercial-location-card {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 18px;
+
+    padding: 28px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 16px;
+
+    transition: all 0.3s ease;
+}
+
+.commercial-location-card:hover {
+    background: #ffffff;
+
+    border-color: #93c5fd;
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 15px 35px rgba(37, 99, 235, 0.10);
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.commercial-location-icon {
+    flex-shrink: 0;
+
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #dbeafe;
+
+    color: #2563eb;
+
+    border-radius: 12px;
+
+    font-size: 22px;
+}
+
+.commercial-location-card:hover .commercial-location-icon {
+    background: #2563eb;
+
+    color: #ffffff;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.commercial-location-content h3 {
+    margin: 0 0 8px;
+
+    color: #1f2937;
+
+    font-size: 18px;
+
+    font-weight: 700;
+}
+
+.commercial-location-content p {
+    margin: 0;
+
+    color: #6b7280;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1050px) {
+
+    .commercial-location-section {
+        padding: 75px 5%;
+    }
+
+    .commercial-location-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .commercial-location-heading h2 {
+        font-size: 36px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .commercial-location-section {
+        padding: 65px 20px;
+    }
+
+    .commercial-location-heading {
+        margin-bottom: 40px;
+    }
+
+    .commercial-location-heading h2 {
+        font-size: 30px;
+    }
+
+    .commercial-location-heading p {
+        font-size: 16px;
+    }
+
+    .commercial-location-grid {
+        grid-template-columns: 1fr;
+
+        gap: 16px;
+    }
+
+    .commercial-location-card {
+        padding: 24px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .commercial-location-section {
+        padding: 55px 16px;
+    }
+
+    .commercial-location-heading h2 {
+        font-size: 26px;
+    }
+
+    .commercial-location-heading p {
+        font-size: 15px;
+    }
+
+    .commercial-location-tag {
+        font-size: 13px;
+        padding: 7px 16px;
+    }
+
+    .commercial-location-card {
+        gap: 14px;
+
+        padding: 20px;
+    }
+
+    .commercial-location-icon {
+        width: 46px;
+        height: 46px;
+
+        font-size: 19px;
+    }
+
+    .commercial-location-content h3 {
+        font-size: 17px;
+    }
+
+    .commercial-location-content p {
+        font-size: 13px;
+    }
+
+}

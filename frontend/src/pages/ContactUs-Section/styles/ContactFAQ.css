@@ -1,0 +1,88 @@
+.faq-section {
+  width: 100%;
+  padding: 80px 20px;
+  background: #f8fafc;
+  text-align: center;
+}
+
+.faq-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #111827;
+}
+
+/* container */
+.faq-container {
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* card */
+.faq-item {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px 18px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  border: 1px solid #eef2ff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+/* hover */
+.faq-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(37, 99, 235, 0.12);
+}
+
+/* question */
+.faq-item h4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  color: #111827;
+}
+
+/* icon */
+.faq-item span {
+  font-size: 18px;
+  color: #2563eb;
+  font-weight: bold;
+}
+
+/* answer */
+.faq-item p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.6;
+  animation: fadeIn 0.3s ease;
+}
+
+/* animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* active border highlight */
+.faq-item.active {
+  border-left: 4px solid #2563eb;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .faq-section h2 {
+    font-size: 1.6rem;
+  }
+}

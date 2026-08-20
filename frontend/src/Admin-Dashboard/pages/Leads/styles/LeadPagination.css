@@ -1,0 +1,197 @@
+/* ================================= */
+
+.lead-pagination{
+
+    margin-top:30px;
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:22px 28px;
+
+    box-shadow:0 10px 25px rgba(15,23,42,.06);
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+/* ================================= */
+
+.pagination-info{
+
+    color:#64748B;
+
+    font-size:15px;
+
+}
+
+.pagination-info strong{
+
+    color:#0F172A;
+
+}
+
+/* ================================= */
+
+.pagination-pages{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+/* ================================= */
+
+.page-btn{
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#F8FAFC;
+
+    color:#334155;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.page-btn:hover{
+
+    background:#2563EB;
+
+    color:white;
+
+    transform:translateY(-2px);
+
+}
+
+.page-btn.active{
+
+    background:#2563EB;
+
+    color:white;
+
+    box-shadow:0 8px 20px rgba(37,99,235,.30);
+
+}
+
+/* ================================= */
+
+.pagination-limit{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.pagination-limit label{
+
+    font-weight:600;
+
+    color:#334155;
+
+}
+
+.pagination-limit select{
+
+    width:80px;
+
+    height:42px;
+
+    border:1px solid #CBD5E1;
+
+    border-radius:10px;
+
+    padding:0 12px;
+
+    outline:none;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.pagination-limit select:focus{
+
+    border-color:#2563EB;
+
+    box-shadow:0 0 0 4px rgba(37,99,235,.12);
+
+}
+
+/* ================================= */
+
+@media(max-width:992px){
+
+.lead-pagination{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+}
+
+.pagination-pages{
+
+    flex-wrap:wrap;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.pagination-pages{
+
+    justify-content:center;
+
+    width:100%;
+
+}
+
+.pagination-limit{
+
+    width:100%;
+
+    justify-content:space-between;
+
+}
+
+.pagination-limit select{
+
+    width:100px;
+
+}
+
+}

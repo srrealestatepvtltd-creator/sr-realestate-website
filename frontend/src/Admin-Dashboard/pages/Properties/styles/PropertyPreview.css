@@ -1,0 +1,321 @@
+/* ===========================
+   PROPERTY PREVIEW
+=========================== */
+
+.property-preview{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.property-preview h2{
+    font-size:28px;
+    color:#111827;
+    font-weight:700;
+}
+
+.preview-card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+/* ===========================
+IMAGE
+=========================== */
+
+.preview-image{
+    position:relative;
+    width:100%;
+    height:320px;
+    overflow:hidden;
+    background:#eef2f7;
+}
+
+.preview-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.4s;
+}
+
+.preview-card:hover .preview-image img{
+    transform:scale(1.05);
+}
+
+.image-placeholder{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+    color:#94a3b8;
+    background:#f1f5f9;
+}
+
+/* ===========================
+BADGES
+=========================== */
+
+.preview-badge{
+    position:absolute;
+    top:18px;
+    left:18px;
+
+    background:#00b894;
+    color:#fff;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    font-size:13px;
+    font-weight:600;
+}
+
+.preview-price{
+    color:#16a34a;
+    font-size:34px;
+    font-weight:700;
+}
+
+/* ===========================
+CONTENT
+=========================== */
+
+.preview-content{
+    padding:30px;
+}
+
+.preview-content h3{
+    font-size:30px;
+    color:#1f2937;
+    margin-bottom:15px;
+}
+
+.preview-type,
+.preview-location{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:#64748b;
+    margin-bottom:10px;
+}
+
+.preview-type svg,
+.preview-location svg{
+    color:#0ea5e9;
+}
+
+/* ===========================
+FEATURES
+=========================== */
+
+.preview-features{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+    margin:30px 0;
+}
+
+.preview-features span{
+
+    background:#f8fafc;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    font-weight:600;
+
+    color:#374151;
+
+    transition:.3s;
+}
+
+.preview-features span:hover{
+
+    background:#0ea5e9;
+    color:#fff;
+
+}
+
+.preview-features svg{
+
+    font-size:22px;
+
+}
+
+/* ===========================
+EXTRA
+=========================== */
+
+.preview-extra{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+    margin:25px 0;
+
+}
+
+.preview-extra p{
+
+    background:#f8fafc;
+
+    padding:14px 18px;
+
+    border-radius:10px;
+
+    color:#475569;
+
+}
+
+/* ===========================
+DESCRIPTION
+=========================== */
+
+.preview-description{
+
+    margin-top:30px;
+
+}
+
+.preview-description h4{
+
+    margin-bottom:12px;
+
+    font-size:22px;
+
+    color:#111827;
+
+}
+
+.preview-description p{
+
+    line-height:1.8;
+
+    color:#64748b;
+
+}
+
+/* ===========================
+GALLERY
+=========================== */
+
+.gallery-preview{
+
+    margin-top:35px;
+
+}
+
+.gallery-preview h4{
+
+    margin-bottom:18px;
+
+    font-size:22px;
+
+}
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fill,minmax(130px,1fr));
+
+    gap:15px;
+
+}
+
+.gallery-grid img{
+
+    width:100%;
+    height:120px;
+
+    border-radius:12px;
+
+    object-fit:cover;
+
+    transition:.35s;
+
+    cursor:pointer;
+
+}
+
+.gallery-grid img:hover{
+
+    transform:scale(1.06);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+}
+
+/* ===========================
+RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+.preview-features{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.preview-extra{
+
+grid-template-columns:1fr;
+
+}
+
+.preview-image{
+
+height:250px;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.preview-features{
+
+grid-template-columns:1fr;
+
+}
+
+.preview-content{
+
+padding:20px;
+
+}
+
+.preview-content h3{
+
+font-size:24px;
+
+}
+
+.preview-price{
+
+font-size:28px;
+
+}
+
+}

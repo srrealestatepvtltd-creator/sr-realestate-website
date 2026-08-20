@@ -1,0 +1,70 @@
+.service-areas {
+  text-align: center;
+  padding: 70px 20px;
+  background: #f8fafc;
+}
+
+.service-areas h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.service-areas p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* CHIP CONTAINER */
+.areas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* CHIP STYLE */
+.area-chip {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  padding: 10px 16px;
+  border-radius: 50px;
+  font-size: 13px;
+  color: #1e3a8a;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.04);
+  position: relative;
+  overflow: hidden;
+}
+
+/* HOVER EFFECT */
+.area-chip:hover {
+  background: #2563eb;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(37, 99, 235, 0.25);
+}
+
+/* CLICK EFFECT */
+.area-chip:active {
+  transform: scale(0.95);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .service-areas h2 {
+    font-size: 1.6rem;
+  }
+
+  .area-chip {
+    font-size: 12px;
+    padding: 8px 14px;
+  }
+}

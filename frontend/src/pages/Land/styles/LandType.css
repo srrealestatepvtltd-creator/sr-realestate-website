@@ -1,0 +1,185 @@
+.land-types-section{
+    padding:90px 8%;
+    background:#f8fafc;
+}
+
+.land-types-heading{
+    max-width:850px;
+    margin:0 auto 60px;
+    text-align:center;
+}
+
+.land-types-tag{
+    display:inline-block;
+    padding:8px 20px;
+    background:#dcfce7;
+    color:#15803d;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.land-types-heading h2{
+    font-size:42px;
+    color:#1f2937;
+    font-weight:700;
+    margin-bottom:18px;
+}
+
+.land-types-heading p{
+    font-size:17px;
+    color:#6b7280;
+    line-height:1.9;
+}
+
+.land-types-grid{
+    max-width:1300px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.land-type-card{
+    background:#fff;
+    border-radius:18px;
+    padding:35px 28px;
+    text-align:center;
+    border:1px solid #e5e7eb;
+    transition:.35s;
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+}
+
+.land-type-card:hover{
+    transform:translateY(-10px);
+    border-color:#16a34a;
+    box-shadow:0 18px 45px rgba(0,0,0,.12);
+}
+
+.land-type-card svg{
+    width:75px;
+    height:75px;
+    padding:18px;
+    border-radius:50%;
+    background:#dcfce7;
+    color:#16a34a;
+    font-size:34px;
+    margin-bottom:22px;
+}
+
+.land-type-card h3{
+    font-size:22px;
+    color:#1f2937;
+    margin-bottom:15px;
+    font-weight:700;
+}
+
+.land-type-card p{
+    color:#6b7280;
+    line-height:1.8;
+    font-size:15px;
+}
+
+.land-types-button{
+    display:flex;
+    justify-content:center;
+    margin-top:55px;
+}
+
+.land-types-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    background:#15803d;
+    color:#fff;
+    text-decoration:none;
+    padding:15px 30px;
+    border-radius:10px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.land-types-btn:hover{
+    background:#166534;
+    transform:translateY(-3px);
+}
+
+/* ---------- Tablet ---------- */
+
+@media (max-width:1100px){
+
+.land-types-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.land-types-heading h2{
+    font-size:36px;
+}
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width:768px){
+
+.land-types-section{
+    padding:70px 20px;
+}
+
+.land-types-heading{
+    margin-bottom:40px;
+}
+
+.land-types-heading h2{
+    font-size:30px;
+}
+
+.land-types-heading p{
+    font-size:16px;
+}
+
+.land-types-grid{
+    grid-template-columns:1fr;
+    gap:20px;
+}
+
+.land-type-card{
+    padding:30px 24px;
+}
+
+.land-types-btn{
+    width:100%;
+    justify-content:center;
+}
+
+}
+
+/* ---------- Small Mobile ---------- */
+
+@media (max-width:480px){
+
+.land-types-heading h2{
+    font-size:26px;
+}
+
+.land-types-tag{
+    font-size:13px;
+}
+
+.land-type-card svg{
+    width:65px;
+    height:65px;
+    font-size:28px;
+    padding:16px;
+}
+
+.land-type-card h3{
+    font-size:20px;
+}
+
+.land-type-card p{
+    font-size:14px;
+}
+
+}

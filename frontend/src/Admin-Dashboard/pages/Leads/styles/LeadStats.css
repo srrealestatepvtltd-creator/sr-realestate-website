@@ -1,0 +1,209 @@
+/* =============================== */
+
+.lead-stats-section{
+
+    margin:35px 0;
+
+}
+
+/* Header */
+
+.lead-stats-header{
+
+    margin-bottom:25px;
+
+}
+
+.stats-tag{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    background:#DBEAFE;
+
+    color:#2563EB;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    margin-bottom:12px;
+
+}
+
+.lead-stats-header h2{
+
+    font-size:30px;
+
+    color:#0F172A;
+
+    margin-bottom:10px;
+
+}
+
+.lead-stats-header p{
+
+    color:#64748B;
+
+    max-width:650px;
+
+    line-height:1.7;
+
+}
+
+/* Grid */
+
+.lead-stats-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+
+    gap:22px;
+
+}
+
+/* Card */
+
+.lead-stat-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    box-shadow:0 10px 25px rgba(15,23,42,.06);
+
+    transition:.35s;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.lead-stat-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 40px rgba(15,23,42,.10);
+
+}
+
+.lead-stat-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:5px;
+
+    height:100%;
+
+    background:#2563EB;
+
+}
+
+/* Icon */
+
+.lead-stat-icon{
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#fff;
+
+    font-size:24px;
+
+    flex-shrink:0;
+
+}
+
+/* Content */
+
+.lead-stat-content{
+
+    flex:1;
+
+}
+
+.lead-stat-content h3{
+
+    font-size:30px;
+
+    color:#0F172A;
+
+    margin-bottom:6px;
+
+}
+
+.lead-stat-content p{
+
+    color:#64748B;
+
+    font-size:15px;
+
+}
+
+/* Growth */
+
+.lead-growth{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    font-weight:700;
+
+    font-size:15px;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.lead-stats-header h2{
+
+    font-size:25px;
+
+}
+
+.lead-stat-card{
+
+    padding:20px;
+
+}
+
+.lead-stat-content h3{
+
+    font-size:24px;
+
+}
+
+}

@@ -1,0 +1,215 @@
+.advertise-how-section{
+    padding:90px 5%;
+    background:#ffffff;
+}
+
+.advertise-how-heading{
+    max-width:700px;
+    margin:0 auto 60px;
+    text-align:center;
+}
+
+.advertise-how-tag{
+    display:inline-block;
+    background:#2563eb;
+    color:#fff;
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.advertise-how-heading h2{
+    font-size:42px;
+    font-weight:700;
+    color:#111827;
+    margin-bottom:18px;
+    line-height:1.2;
+}
+
+.advertise-how-heading p{
+    color:#6b7280;
+    font-size:17px;
+    line-height:1.8;
+}
+.advertise-how-grid{
+    max-width:1400px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+.advertise-how-card{
+
+    position:relative;
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:35px 28px;
+
+    text-align:center;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    transition:.35s;
+}
+
+.advertise-how-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 50px rgba(37,99,235,.18);
+}
+.advertise-how-number{
+
+    width:55px;
+    height:55px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:#eff6ff;
+
+    color:#2563eb;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:20px;
+    font-weight:700;
+}
+.advertise-how-icon{
+
+    width:80px;
+    height:80px;
+
+    margin:25px auto;
+
+    border-radius:50%;
+
+    background:#2563eb;
+
+    color:#fff;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:32px;
+
+    transition:.35s;
+}
+
+.advertise-how-card:hover .advertise-how-icon{
+
+    transform:rotateY(180deg);
+
+    background:#1d4ed8;
+}
+.advertise-how-card h3{
+
+    font-size:22px;
+
+    color:#111827;
+
+    margin-bottom:15px;
+}
+
+.advertise-how-card p{
+
+    color:#6b7280;
+
+    line-height:1.8;
+
+    font-size:15px;
+}
+.advertise-how-arrow{
+
+    position:absolute;
+
+    right:-35px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:40px;
+    height:40px;
+
+    border-radius:50%;
+
+    background:#2563eb;
+
+    color:#fff;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:16px;
+
+    z-index:5;
+}
+@media(max-width:1200px){
+
+    .advertise-how-grid{
+
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .advertise-how-arrow{
+
+        display:none;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .advertise-how-section{
+
+        padding:70px 20px;
+    }
+
+    .advertise-how-heading h2{
+
+        font-size:30px;
+    }
+
+    .advertise-how-heading p{
+
+        font-size:15px;
+    }
+
+    .advertise-how-grid{
+
+        grid-template-columns:1fr;
+
+        gap:25px;
+    }
+
+    .advertise-how-card{
+
+        padding:30px 22px;
+    }
+
+    .advertise-how-icon{
+
+        width:70px;
+        height:70px;
+
+        font-size:28px;
+    }
+
+    .advertise-how-card h3{
+
+        font-size:20px;
+    }
+
+}

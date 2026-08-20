@@ -1,0 +1,158 @@
+.faq-advertise-section{
+    padding:90px 5%;
+    background:#ffffff;
+}
+
+.faq-advertise-heading{
+    max-width:700px;
+    margin:0 auto 60px;
+    text-align:center;
+}
+
+.faq-advertise-tag{
+    display:inline-block;
+    padding:8px 18px;
+    margin-bottom:20px;
+
+    background:#2563eb;
+    color:#fff;
+
+    border-radius:30px;
+
+    font-size:14px;
+    font-weight:600;
+}
+
+.faq-advertise-heading h2{
+    font-size:42px;
+    color:#111827;
+    margin-bottom:18px;
+    font-weight:700;
+}
+
+.faq-advertise-heading p{
+    color:#6b7280;
+    font-size:17px;
+    line-height:1.8;
+}
+
+.faq-advertise-container{
+    max-width:900px;
+    margin:auto;
+
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.faq-advertise-card{
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+
+    border:1px solid #e5e7eb;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+
+    transition:.3s;
+}
+
+.faq-advertise-card:hover{
+    box-shadow:0 18px 40px rgba(37,99,235,.12);
+}
+
+.faq-advertise-card.active{
+    border-color:#2563eb;
+}
+
+.faq-advertise-question{
+    width:100%;
+
+    padding:24px 30px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:#fff;
+
+    border:none;
+
+    cursor:pointer;
+
+    font-size:18px;
+    font-weight:600;
+    color:#111827;
+
+    text-align:left;
+
+    transition:.3s;
+}
+
+.faq-advertise-question:hover{
+    background:#f8fbff;
+}
+
+.faq-advertise-question svg{
+    color:#2563eb;
+    font-size:18px;
+    flex-shrink:0;
+    transition:.3s;
+}
+
+.faq-advertise-card.active .faq-advertise-question svg{
+    transform:rotate(180deg);
+}
+
+.faq-advertise-answer{
+    max-height:0;
+
+    overflow:hidden;
+
+    transition:max-height .4s ease,
+               padding .4s ease,
+               background .4s ease;
+}
+
+.faq-advertise-answer.show{
+    max-height:300px;
+
+    padding:0 30px 25px;
+
+    background:#fff;
+}
+
+.faq-advertise-answer p{
+    color:#6b7280;
+    line-height:1.9;
+    font-size:16px;
+}
+
+@media(max-width:768px){
+
+    .faq-advertise-section{
+        padding:70px 20px;
+    }
+
+    .faq-advertise-heading h2{
+        font-size:30px;
+    }
+
+    .faq-advertise-heading p{
+        font-size:15px;
+    }
+
+    .faq-advertise-question{
+        padding:20px;
+        font-size:16px;
+    }
+
+    .faq-advertise-answer.show{
+        padding:0 20px 20px;
+    }
+
+    .faq-advertise-answer p{
+        font-size:15px;
+    }
+
+}

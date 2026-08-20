@@ -1,0 +1,432 @@
+.advertise-admin-table-card {
+    width: 100%;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 4px 18px rgba(0, 0, 0, 0.04);
+}
+
+
+/* =========================================
+   TOOLBAR
+========================================= */
+
+.advertise-table-toolbar {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 22px 24px;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+.advertise-table-title {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+.advertise-table-title h2 {
+    margin: 0;
+
+    color: #111827;
+
+    font-size: 19px;
+
+    font-weight: 700;
+}
+
+
+.advertise-table-title span {
+    padding: 4px 9px;
+
+    background: #f3f4f6;
+
+    color: #6b7280;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   SEARCH
+========================================= */
+
+.advertise-search {
+    width: 280px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 0 13px;
+
+    background: #f9fafb;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 9px;
+
+    transition: 0.2s;
+}
+
+
+.advertise-search:focus-within {
+    background: #ffffff;
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+
+.advertise-search svg {
+    color: #9ca3af;
+
+    font-size: 14px;
+}
+
+
+.advertise-search input {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #111827;
+
+    font-size: 13px;
+}
+
+
+.advertise-search input::placeholder {
+    color: #9ca3af;
+}
+
+
+/* =========================================
+   TABLE WRAPPER
+========================================= */
+
+.advertise-table-wrapper {
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+.advertise-table {
+    width: 100%;
+
+    min-width: 850px;
+
+    border-collapse: collapse;
+}
+
+
+.advertise-table th {
+    padding: 14px 20px;
+
+    background: #f9fafb;
+
+    color: #6b7280;
+
+    text-align: left;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.4px;
+
+    white-space: nowrap;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+.advertise-table td {
+    padding: 16px 20px;
+
+    color: #4b5563;
+
+    font-size: 13px;
+
+    border-bottom: 1px solid #f1f5f9;
+
+    white-space: nowrap;
+}
+
+
+.advertise-table tbody tr {
+    transition: background 0.2s ease;
+}
+
+
+.advertise-table tbody tr:hover {
+    background: #f8fafc;
+}
+
+
+.advertise-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* =========================================
+   NAME
+========================================= */
+
+.advertise-table td strong {
+    color: #111827;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   STATUS SELECT
+========================================= */
+
+.advertise-status-select {
+    min-width: 105px;
+
+    padding: 6px 9px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 7px;
+
+    outline: none;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    background: #f9fafb;
+}
+
+
+.advertise-status-select:focus {
+    border-color: #2563eb;
+}
+
+
+/* Status variations */
+
+.advertise-status-new {
+    color: #1d4ed8;
+
+    background: #eff6ff;
+
+    border-color: #bfdbfe;
+}
+
+
+.advertise-status-contacted {
+    color: #b45309;
+
+    background: #fffbeb;
+
+    border-color: #fde68a;
+}
+
+
+.advertise-status-completed {
+    color: #15803d;
+
+    background: #f0fdf4;
+
+    border-color: #bbf7d0;
+}
+
+
+.advertise-status-rejected {
+    color: #b91c1c;
+
+    background: #fef2f2;
+
+    border-color: #fecaca;
+}
+
+
+/* =========================================
+   ACTIONS
+========================================= */
+
+.advertise-table-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+}
+
+
+.advertise-table-actions button {
+    width: 32px;
+
+    height: 32px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 7px;
+
+    background: #ffffff;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+
+/* View */
+
+.advertise-view-btn {
+    color: #2563eb;
+}
+
+
+.advertise-view-btn:hover {
+    background: #eff6ff;
+
+    border-color: #bfdbfe;
+}
+
+
+/* Delete */
+
+.advertise-delete-btn {
+    color: #dc2626;
+}
+
+
+.advertise-delete-btn:hover {
+    background: #fef2f2;
+
+    border-color: #fecaca;
+}
+
+
+/* =========================================
+   MESSAGE
+========================================= */
+
+.advertise-table-message {
+    min-height: 220px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 30px;
+
+    color: #6b7280;
+
+    font-size: 14px;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 768px) {
+
+    .advertise-table-toolbar {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        padding: 18px;
+    }
+
+    .advertise-table-title {
+        justify-content: space-between;
+    }
+
+    .advertise-search {
+        width: 100%;
+
+        box-sizing: border-box;
+    }
+
+    .advertise-table th,
+    .advertise-table td {
+        padding: 13px 15px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .advertise-admin-table-card {
+        border-radius: 12px;
+    }
+
+    .advertise-table-toolbar {
+        padding: 16px;
+    }
+
+    .advertise-table-title h2 {
+        font-size: 17px;
+    }
+
+    .advertise-table-title span {
+        font-size: 11px;
+    }
+
+}

@@ -1,0 +1,130 @@
+.commercial-seo-section {
+    padding: 80px 8%;
+    background: #f8fafc;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.commercial-seo-container {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   TAG
+========================================= */
+
+.commercial-seo-tag {
+    display: inline-block;
+
+    padding: 8px 20px;
+    margin-bottom: 18px;
+
+    background: #dbeafe;
+    color: #1d4ed8;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.commercial-seo-container h2 {
+    margin: 0 0 30px;
+
+    color: #1f2937;
+
+    font-size: 38px;
+
+    line-height: 1.35;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.commercial-seo-content {
+    text-align: left;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+}
+
+.commercial-seo-content p {
+    margin: 0 0 18px;
+
+    color: #6b7280;
+
+    font-size: 16px;
+
+    line-height: 1.9;
+}
+
+.commercial-seo-content p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 768px) {
+
+    .commercial-seo-section {
+        padding: 65px 20px;
+    }
+
+    .commercial-seo-container h2 {
+        font-size: 30px;
+    }
+
+    .commercial-seo-content p {
+        font-size: 15px;
+
+        line-height: 1.8;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .commercial-seo-section {
+        padding: 55px 16px;
+    }
+
+    .commercial-seo-tag {
+        font-size: 13px;
+
+        padding: 7px 16px;
+    }
+
+    .commercial-seo-container h2 {
+        font-size: 26px;
+    }
+
+    .commercial-seo-content p {
+        font-size: 14px;
+    }
+
+}

@@ -1,0 +1,345 @@
+/* =========================================
+   COMMERCIAL HERO
+========================================= */
+
+.commercial-hero-section {
+    position: relative;
+
+    min-height: 620px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(15, 23, 42, 0.96),
+            rgba(15, 23, 42, 0.82),
+            rgba(15, 23, 42, 0.45)
+        ),
+        url("/public/images/CommercialProperty.jpeg");
+
+    background-size: cover;
+    background-position: center;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   OVERLAY
+========================================= */
+
+.commercial-hero-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at 80% 40%,
+            rgba(37, 99, 235, 0.20),
+            transparent 40%
+        );
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.commercial-hero-container {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 1350px;
+
+    margin: 0 auto;
+
+    padding: 90px 8%;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.commercial-hero-content {
+    max-width: 760px;
+}
+
+
+/* =========================================
+   TAG
+========================================= */
+
+.commercial-hero-tag {
+    display: inline-block;
+
+    padding: 9px 20px;
+
+    margin-bottom: 22px;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    color: #bfdbfe;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    backdrop-filter: blur(8px);
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.commercial-hero-content h1 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 58px;
+
+    line-height: 1.15;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+}
+
+.commercial-hero-content h1 span {
+    color: #60a5fa;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.commercial-hero-content > p {
+    max-width: 700px;
+
+    margin: 25px 0;
+
+    color: #dbeafe;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   HIGHLIGHTS
+========================================= */
+
+.commercial-hero-highlights {
+    display: flex;
+
+    gap: 30px;
+
+    margin: 25px 0;
+}
+
+.commercial-hero-highlights div {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    font-weight: 600;
+}
+
+.commercial-hero-highlights svg {
+    color: #60a5fa;
+
+    font-size: 20px;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.commercial-hero-actions {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    margin-top: 32px;
+}
+
+.commercial-hero-primary-btn,
+.commercial-hero-secondary-btn {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 15px 25px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Primary */
+
+.commercial-hero-primary-btn {
+    background: #2563eb;
+
+    color: #ffffff;
+
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+}
+
+.commercial-hero-primary-btn:hover {
+    background: #1d4ed8;
+
+    transform: translateY(-3px);
+}
+
+
+/* Secondary */
+
+.commercial-hero-secondary-btn {
+    background: rgba(255, 255, 255, 0.1);
+
+    color: #ffffff;
+
+    border: 1px solid rgba(255, 255, 255, 0.35);
+
+    backdrop-filter: blur(8px);
+}
+
+.commercial-hero-secondary-btn:hover {
+    background: #ffffff;
+
+    color: #1f2937;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .commercial-hero-section {
+        min-height: 560px;
+    }
+
+    .commercial-hero-container {
+        padding: 80px 6%;
+    }
+
+    .commercial-hero-content h1 {
+        font-size: 46px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .commercial-hero-section {
+        min-height: auto;
+
+        background-position: center;
+    }
+
+    .commercial-hero-container {
+        padding: 75px 20px;
+    }
+
+    .commercial-hero-content {
+        max-width: 100%;
+    }
+
+    .commercial-hero-content h1 {
+        font-size: 38px;
+
+        letter-spacing: -0.5px;
+    }
+
+    .commercial-hero-content > p {
+        font-size: 15px;
+
+        line-height: 1.7;
+    }
+
+    .commercial-hero-highlights {
+        flex-direction: column;
+
+        gap: 14px;
+    }
+
+    .commercial-hero-actions {
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .commercial-hero-primary-btn,
+    .commercial-hero-secondary-btn {
+        width: 100%;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .commercial-hero-container {
+        padding: 60px 16px;
+    }
+
+    .commercial-hero-tag {
+        font-size: 12px;
+
+        padding: 7px 15px;
+    }
+
+    .commercial-hero-content h1 {
+        font-size: 31px;
+    }
+
+    .commercial-hero-content > p {
+        font-size: 14px;
+    }
+
+}

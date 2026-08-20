@@ -1,0 +1,261 @@
+.sr-statcards-section{
+
+    margin-top:35px;
+
+}
+
+/* Header */
+
+.sr-statcards-header{
+
+    margin-bottom:25px;
+
+}
+
+.sr-statcards-header h2{
+
+    font-size:30px;
+
+    color:#0f172a;
+
+    margin-bottom:8px;
+
+}
+
+.sr-statcards-header p{
+
+    color:#64748b;
+
+    font-size:15px;
+
+}
+
+/* Grid */
+
+.sr-statcards-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+
+}
+
+/* Card */
+
+.sr-stat-card{
+
+    background:white;
+
+    border-radius:22px;
+
+    padding:28px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    transition:.35s;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.05);
+
+}
+
+.sr-stat-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 45px rgba(37,99,235,.15);
+
+}
+
+/* Colored Border */
+
+.sr-stat-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:6px;
+
+    height:100%;
+
+    background:var(--cardColor);
+
+}
+
+/* Top */
+
+.sr-stat-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+}
+
+/* Icon */
+
+.sr-stat-icon{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    font-size:24px;
+
+}
+
+/* Trend */
+
+.sr-stat-trend{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    padding:8px 14px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.trend-up{
+
+    background:#dcfce7;
+
+    color:#15803d;
+
+}
+
+.trend-down{
+
+    background:#fee2e2;
+
+    color:#dc2626;
+
+}
+
+/* Value */
+
+.sr-stat-card h3{
+
+    font-size:34px;
+
+    color:#0f172a;
+
+    margin-bottom:8px;
+
+}
+
+/* Title */
+
+.sr-stat-card h4{
+
+    font-size:18px;
+
+    color:#334155;
+
+    margin-bottom:8px;
+
+}
+
+/* Subtitle */
+
+.sr-stat-card p{
+
+    color:#94a3b8;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+}
+
+/* Progress */
+
+.sr-progress-line{
+
+    height:7px;
+
+    border-radius:10px;
+
+    background:#eef2ff;
+
+    overflow:hidden;
+
+}
+
+.sr-progress-line span{
+
+    display:block;
+
+    width:75%;
+
+    height:100%;
+
+    background:var(--cardColor);
+
+    border-radius:10px;
+
+}
+
+/* Hover Animation */
+
+.sr-stat-card:hover .sr-stat-icon{
+
+    transform:rotate(-10deg) scale(1.08);
+
+    transition:.4s;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.sr-statcards-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.sr-stat-card{
+
+padding:24px;
+
+}
+
+.sr-stat-card h3{
+
+font-size:30px;
+
+}
+
+}

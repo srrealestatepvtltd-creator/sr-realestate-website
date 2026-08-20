@@ -1,0 +1,253 @@
+.advertise-form-section{
+    padding:80px 5%;
+    background:#f8fafc;
+}
+
+.advertise-form-container{
+    max-width:1400px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:420px 1fr;
+    gap:50px;
+    align-items:start;
+}
+.advertise-form-left{
+    position:sticky;
+    top:120px;
+}
+
+.advertise-tag{
+    display:inline-block;
+    background:#2563eb;
+    color:#fff;
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.advertise-form-left h2{
+    font-size:42px;
+    font-weight:700;
+    color:#111827;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.advertise-form-left h2 span{
+    color:#2563eb;
+}
+
+.advertise-form-left p{
+    font-size:16px;
+    color:#6b7280;
+    line-height:1.8;
+}
+.advertise-form{
+    background:#fff;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:22px;
+}
+/* =========================================
+   MESSAGE / TEXTAREA
+========================================= */
+
+.advertise-message-group {
+  grid-column: 1 / -1;
+}
+
+.advertise-message-group textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 14px 16px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+  color: #333;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.6;
+  resize: vertical;
+  outline: none;
+  transition: all 0.25s ease;
+  box-sizing: border-box;
+}
+
+.advertise-message-group textarea::placeholder {
+  color: #999;
+}
+
+.advertise-message-group textarea:focus {
+  border-color: #e63946;
+  box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.08);
+}
+
+.advertise-message-group textarea:hover {
+  border-color: #bbb;
+}
+
+
+/* =========================================
+   MESSAGE LABEL
+========================================= */
+
+.advertise-message-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.advertise-message-group label svg {
+  color: #e63946;
+}
+
+.advertise-message-group label small {
+  margin-left: 4px;
+  font-size: 11px;
+  font-weight: 400;
+  color: #999;
+}
+.form-group{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.form-group label{
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    font-size:15px;
+    font-weight:600;
+    color:#374151;
+}
+
+.form-group label svg{
+    color:#2563eb;
+}
+.form-group input,
+.form-group select{
+
+    width:100%;
+    padding:15px 18px;
+
+    border:1px solid #d1d5db;
+    border-radius:12px;
+
+    outline:none;
+
+    font-size:15px;
+
+    transition:.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 0 4px rgba(37,99,235,.12);
+}
+.advertise-submit-btn{
+
+    grid-column:1/-1;
+
+    margin-top:10px;
+
+    height:56px;
+
+    border:none;
+    border-radius:14px;
+
+    background:#2563eb;
+
+    color:#fff;
+
+    font-size:17px;
+    font-weight:600;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.advertise-submit-btn:hover{
+
+    background:#1d4ed8;
+
+    transform:translateY(-3px);
+}
+
+.advertise-submit-btn:disabled{
+
+    opacity:.7;
+    cursor:not-allowed;
+
+    transform:none;
+}
+@media(max-width:992px){
+
+    .advertise-form-container{
+
+        grid-template-columns:1fr;
+
+        gap:40px;
+    }
+
+    .advertise-form-left{
+
+        position:static;
+
+        text-align:center;
+    }
+
+    .advertise-form-left h2{
+
+        font-size:34px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .advertise-form-section{
+
+        padding:60px 20px;
+    }
+
+    .advertise-form{
+
+        grid-template-columns:1fr;
+
+        padding:25px;
+    }
+
+    .advertise-form-left h2{
+
+        font-size:28px;
+    }
+
+    .advertise-submit-btn{
+
+        height:52px;
+
+        font-size:16px;
+    }
+
+}

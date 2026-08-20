@@ -1,0 +1,59 @@
+.map-section {
+  width: 100%;
+  padding: 80px 20px;
+  text-align: center;
+  background: #ffffff;
+}
+
+/* TITLE */
+.map-section h2 {
+  font-size: 2rem;
+  color: #111827;
+  margin-bottom: 25px;
+  font-weight: 700;
+  position: relative;
+}
+
+/* decorative underline */
+.map-section h2::after {
+  content: "";
+  width: 70px;
+  height: 3px;
+  background: #2563eb;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 5px;
+}
+
+/* MAP WRAPPER EFFECT */
+.map-section iframe {
+  width: 100%;
+  max-width: 1200px;
+  height: 450px;
+  border: none;
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.map-section iframe:hover {
+  transform: scale(1.01);
+  box-shadow: 0 20px 45px rgba(37, 99, 235, 0.15);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .map-section {
+    padding: 50px 15px;
+  }
+
+  .map-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .map-section iframe {
+    height: 280px;
+    border-radius: 14px;
+  }
+}

@@ -1,0 +1,210 @@
+/* ==========================
+   HERO FORM
+========================== */
+
+.hero-form {
+    width: 100%;
+    max-width: 430px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(0,0,0,.12);
+    border: 1px solid rgba(37,99,235,.08);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Background Glow */
+
+.hero-form::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:radial-gradient(
+        circle at top right,
+        rgba(37,99,235,.08),
+        transparent 70%
+    );
+    pointer-events:none;
+    z-index:0;
+}
+
+/* Bring form above glow */
+
+.hero-form h2,
+.hero-form-subtitle,
+.hero-form form{
+    position:relative;
+    z-index:2;
+}
+
+/* Hover */
+
+.hero-form:hover::before{
+    opacity:1;
+}
+
+/* ==========================
+   TITLE
+========================== */
+
+.hero-form h2{
+    font-size:28px;
+    font-weight:700;
+    color:#111827;
+    text-align:center;
+    margin-bottom:8px;
+}
+
+.hero-form-subtitle{
+    text-align:center;
+    color:#6b7280;
+    font-size:14px;
+    margin-bottom:25px;
+    line-height:1.6;
+}
+
+/* ==========================
+   FORM
+========================== */
+
+.hero-form form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+/* ==========================
+   INPUTS
+========================== */
+
+.hero-form input,
+.hero-form select,
+.message-input{
+    width:100%;
+    padding:14px 16px;
+    border:1px solid #d1d5db;
+    border-radius:12px;
+    background:#f9fafb;
+    color:#111827;
+    font-size:15px;
+    font-family:inherit;
+    transition:.3s;
+    box-sizing:border-box;
+}
+
+/* ==========================
+   TEXTAREA
+========================== */
+
+.message-input{
+    resize:vertical;
+    min-height:120px;
+}
+
+.message-input::placeholder{
+    color:#9ca3af;
+}
+
+/* ==========================
+   FOCUS
+========================== */
+
+.hero-form input:focus,
+.hero-form select:focus,
+.message-input:focus{
+    outline:none;
+    background:#fff;
+    border-color:#2563eb;
+    box-shadow:0 0 0 4px rgba(37,99,235,.12);
+}
+
+/* ==========================
+   BUTTON
+========================== */
+
+.hero-form button{
+    margin-top:8px;
+    border:none;
+    border-radius:12px;
+    padding:15px;
+    cursor:pointer;
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #1d4ed8
+    );
+    color:#fff;
+    font-size:15px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.hero-form button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 12px 24px rgba(37,99,235,.25);
+}
+
+.hero-form button:disabled{
+    cursor:not-allowed;
+    opacity:.7;
+    transform:none;
+    box-shadow:none;
+}
+
+/* ==========================
+   SCROLLBAR
+========================== */
+
+.message-input::-webkit-scrollbar{
+    width:8px;
+}
+
+.message-input::-webkit-scrollbar-track{
+    background:#f1f5f9;
+    border-radius:10px;
+}
+
+.message-input::-webkit-scrollbar-thumb{
+    background:#2563eb;
+    border-radius:10px;
+}
+
+.message-input::-webkit-scrollbar-thumb:hover{
+    background:#1d4ed8;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (max-width:992px){
+
+.hero-form{
+    max-width:100%;
+}
+
+}
+
+@media (max-width:576px){
+
+.hero-form{
+    padding:22px;
+}
+
+.hero-form h2{
+    font-size:24px;
+}
+
+.hero-form input,
+.hero-form select,
+.message-input{
+    padding:13px;
+    font-size:14px;
+}
+
+.hero-form button{
+    padding:14px;
+}
+
+}

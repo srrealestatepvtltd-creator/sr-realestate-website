@@ -1,0 +1,81 @@
+
+.counter-section {
+  width: 100%;
+  background: linear-gradient(135deg, #97ddbb, #2b498a);
+  padding: 40px 20px;
+}
+
+/* GRID CONTAINER */
+.counter-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+/* CARD STYLE */
+.stat-card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(15px);
+  border-radius: 16px;
+  padding: 30px 20px;
+  text-align: center;
+  color: white;
+  transition: 0.4s;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* HOVER EFFECT */
+.stat-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.18);
+}
+
+/* ICON */
+.icon-count {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #2563eb;
+}
+
+/* NUMBER */
+.stat-card h3 {
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+}
+
+/* TEXT */
+.stat-card p {
+  font-size: 15px;
+  color: #e5e7eb;
+}
+
+/* ANIMATION ENTRY */
+.stat-card {
+  animation: fadeUp 0.8s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .counter-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .counter-container {
+    grid-template-columns: 1fr;
+  }
+}

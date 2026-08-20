@@ -1,0 +1,206 @@
+.house-description-section{
+    padding:40px 8%;
+    background:#ffffff;
+}
+
+.house-description-container{
+    max-width:1300px;
+    margin:auto;
+}
+
+.house-description-header{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.house-description-tag{
+    display:inline-block;
+    background:#eff6ff;
+    color:#2563eb;
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:18px;
+}
+
+.house-description-header h2{
+    font-size:42px;
+    font-weight:700;
+    color:#1f2937;
+    margin-bottom:20px;
+    line-height:1.3;
+}
+
+.house-description-header p{
+    max-width:900px;
+    margin:auto;
+    color:#6b7280;
+    font-size:17px;
+    line-height:1.9;
+}
+
+.house-description-content{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:40px;
+    align-items:start;
+}
+
+.house-description-text{
+    background:#fff;
+    border:1px solid #e5e7eb;
+    border-radius:18px;
+    padding:35px;
+}
+
+.house-description-text h3{
+    font-size:28px;
+    color:#111827;
+    margin-bottom:18px;
+}
+
+.house-description-text p{
+    color:#6b7280;
+    line-height:1.9;
+    margin-bottom:30px;
+}
+
+.house-description-list{
+    list-style:none;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+    padding:0;
+    margin:0;
+}
+
+.house-description-list li{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-size:16px;
+    color:#374151;
+    font-weight:500;
+}
+
+.house-description-list svg{
+    color:#22c55e;
+    font-size:18px;
+}
+
+.house-description-card{
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+    color:#fff;
+    padding:40px 30px;
+    border-radius:20px;
+    text-align:center;
+    position:sticky;
+    top:100px;
+}
+
+.house-description-icon{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.house-description-card h3{
+    font-size:26px;
+    margin-bottom:15px;
+}
+
+.house-description-card p{
+    line-height:1.8;
+    opacity:.95;
+    margin-bottom:30px;
+}
+
+.house-description-btn{
+    display:inline-block;
+    background:#fff;
+    color:#2563eb;
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:10px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.house-description-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+@media (max-width:992px){
+
+.house-description-content{
+    grid-template-columns:1fr;
+}
+
+.house-description-card{
+    position:static;
+}
+
+}
+
+@media (max-width:768px){
+
+.house-description-section{
+    padding:70px 20px;
+}
+
+.house-description-header h2{
+    font-size:32px;
+}
+
+.house-description-header p{
+    font-size:16px;
+}
+
+.house-description-text{
+    padding:25px;
+}
+
+.house-description-list{
+    grid-template-columns:1fr;
+}
+
+.house-description-card{
+    padding:30px 25px;
+}
+
+.house-description-card h3{
+    font-size:22px;
+}
+
+.house-description-btn{
+    width:100%;
+    text-align:center;
+}
+
+}
+
+@media (max-width:480px){
+
+.house-description-header h2{
+    font-size:28px;
+}
+
+.house-description-text h3{
+    font-size:22px;
+}
+
+.house-description-header p,
+.house-description-text p{
+    font-size:15px;
+}
+
+.house-description-list li{
+    font-size:15px;
+}
+
+.house-description-icon{
+    font-size:48px;
+}
+
+}

@@ -1,0 +1,146 @@
+.advertise-admin-stats {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   STAT CARD
+========================================= */
+
+.advertise-stat-card {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 22px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 14px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+
+    transition: all 0.25s ease;
+}
+
+
+.advertise-stat-card:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 22px rgba(0, 0, 0, 0.07);
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.advertise-stat-icon {
+    width: 48px;
+
+    height: 48px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    border-radius: 12px;
+
+    font-size: 19px;
+}
+
+
+/* =========================================
+   INFO
+========================================= */
+
+.advertise-stat-info {
+    min-width: 0;
+}
+
+
+.advertise-stat-info h3 {
+    margin: 0 0 4px;
+
+    color: #111827;
+
+    font-size: 25px;
+
+    line-height: 1.2;
+
+    font-weight: 700;
+}
+
+
+.advertise-stat-info span {
+    display: block;
+
+    color: #6b7280;
+
+    font-size: 13px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .advertise-admin-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 550px) {
+
+    .advertise-admin-stats {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+    .advertise-stat-card {
+        padding: 18px;
+    }
+
+    .advertise-stat-icon {
+        width: 44px;
+
+        height: 44px;
+    }
+
+    .advertise-stat-info h3 {
+        font-size: 22px;
+    }
+
+}
