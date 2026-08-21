@@ -42,7 +42,7 @@ export default function AdminDashboard() {
         <div className="admin-logo">
 
           <div className="logo-circle">
-            <img className="logo-img" src="/images/main-logo.jpg" alt="Logo" />
+            <img className="logo-img" src="/images/Main-logo.jpg" alt="Logo" />
           </div>
 
           <h2>SR Real Estate</h2>
