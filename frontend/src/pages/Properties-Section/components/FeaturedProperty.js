@@ -108,7 +108,7 @@ export default function FeaturedProperties() {
                 </span>
               </div>
 
-              <button className="view-btn">
+              <button className="view-btn" onClick={() => window.location.href = `/request-quote`}>
                 Request Quote
               </button>
             </div>

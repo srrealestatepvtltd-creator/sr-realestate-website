@@ -126,7 +126,7 @@ export default function PropertyGrid() {
                 </span>
               </div>
 
-              <button className="details-btn">
+              <button className="details-btn" onClick={() => window.location.href = `/request-quote`}>
                 Request Quote
               </button>
             </div>
