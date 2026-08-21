@@ -91,7 +91,7 @@ export default function AddProperty() {
       });
 
       const res = await axios.post(
-        "http://localhost:5000/api/properties",
+        "https://sr-realestate-website-backend.onrender.com/api/properties",
         formData,
         {
           headers: {

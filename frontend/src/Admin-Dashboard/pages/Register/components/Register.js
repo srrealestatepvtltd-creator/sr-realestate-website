@@ -46,7 +46,7 @@ export default function Register() {
         setLoading(true);
 
         const res = await fetch(
-          "http://localhost:5000/api/auth/register",
+          "https://sr-realestate-website-backend.onrender.com/api/auth/register",
           {
             method: "POST",
             headers: {

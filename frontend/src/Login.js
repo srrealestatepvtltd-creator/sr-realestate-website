@@ -45,7 +45,7 @@ export default function Login() {
         setLoading(true);
 
         const res = await fetch(
-          "http://localhost:5000/api/auth/login",
+          "https://sr-realestate-website-backend.onrender.com/api/auth/login",
           {
             method: "POST",
             headers: {
