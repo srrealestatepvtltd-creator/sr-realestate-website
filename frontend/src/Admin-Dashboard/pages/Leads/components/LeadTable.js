@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import {
   FaEye,
   FaEdit,
@@ -22,34 +22,32 @@ export default function LeadTable() {
   const [total, setTotal] = useState(0);
   const [pages, setPages] = useState(1);
 
+ const fetchLeads = useCallback(async () => {
+  try {
+    setLoading(true);
+
+    const { data } = await API.get("/leads", {
+      params: {
+        page,
+        limit: rows,
+      },
+    });
+
+    if (data.success) {
+      setLeads(data.data);
+      setTotal(data.total);
+      setPages(data.pages);
+    }
+  } catch (err) {
+    console.error(err);
+    setLeads([]);
+  } finally {
+    setLoading(false);
+  }
+}, [page, rows]);
   useEffect(() => {
     fetchLeads();
-  }, [page, rows]);
-
-  const fetchLeads = async () => {
-    try {
-      setLoading(true);
-
-      const { data } = await API.get("/leads", {
-        params: {
-          page,
-          limit: rows,
-        },
-      });
-
-      if (data.success) {
-        setLeads(data.data);
-        setTotal(data.total);
-        setPages(data.pages);
-      }
-    } catch (err) {
-      console.error(err);
-      setLeads([]);
-    } finally {
-      setLoading(false);
-    }
-  };
-
+  }, [fetchLeads]);
   const statusClass = (status) => {
     switch (status) {
       case "New":

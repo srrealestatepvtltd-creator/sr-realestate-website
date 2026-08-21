@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import LocationPicker from "./LocationPicker";
-import PropertyPreview from "./PropertyPreview";
+
 export default function PropertyForm({
   property,
   setProperty,

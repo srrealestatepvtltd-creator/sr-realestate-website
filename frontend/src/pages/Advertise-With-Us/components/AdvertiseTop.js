@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import {
   FaBullhorn,
   FaHome,
-  FaUsers,
   FaCheckCircle,
   FaArrowRight,
 } from "react-icons/fa";

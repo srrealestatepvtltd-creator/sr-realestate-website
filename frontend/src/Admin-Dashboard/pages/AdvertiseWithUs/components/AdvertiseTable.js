@@ -393,8 +393,7 @@ export default function AdvertiseTable() {
                       <td>
 
                         <strong>
-                          {request.fullName ||
-                            "N/A"}
+                          {request.fullName ||"N/A"}
                         </strong>
 
                       </td>
@@ -406,8 +405,7 @@ export default function AdvertiseTable() {
 
                           <FaPhone />
 
-                          {request.phone ||
-                            "N/A"}
+                          {request.phone ||"N/A"}
 
                         </span>
 
@@ -418,8 +416,7 @@ export default function AdvertiseTable() {
 
                         <span className="advertise-property-badge">
 
-                          {request.propertyType ||
-                            "N/A"}
+                          {request.propertyType ||"N/A"}
 
                         </span>
 
@@ -428,9 +425,7 @@ export default function AdvertiseTable() {
 
                       <td>
 
-                        {request.
-listingType ||
-                          "N/A"}
+                        {request.listingType ||"N/A"}
 
                       </td>
 
@@ -441,9 +436,7 @@ listingType ||
 
                           <FaMapMarkerAlt />
 
-                          {request.address ||
-                            request.location ||
-                            "N/A"}
+                          {request.address ||request.location ||"N/A"}
 
                         </span>
 
