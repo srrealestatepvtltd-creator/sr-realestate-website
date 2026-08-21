@@ -10,7 +10,7 @@ export default function Navbar() {
       {/* Logo */}
       <a href="/" className="logo-link">
         <div className="logo">
-          <img src="./images/main-logo.jpg" alt="SR RealEstate Logo" />
+          <img src="/images/Main-logo.jpg" alt="SR RealEstate Logo" />
         </div>
       </a>
 

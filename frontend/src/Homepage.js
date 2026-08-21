@@ -5,15 +5,15 @@ import Counter from './components/Counter';
 import About from './components/About';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
-import Properties from './components/Properties';
 import ChatFloatingButton from './pages/ChatFloatingButton/components/ChatFloatingButton';
+import PropertyGrid from './pages/Properties-Section/components/PropertyGrid';
 export default function Homepage() {
   return (
     <div>
       <Navbar />
       <Hero />  
         <About />
-         <Properties />
+         <PropertyGrid />
         <Counter />
        
         <FAQ /> 
