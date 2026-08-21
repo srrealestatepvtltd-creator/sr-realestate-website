@@ -5,7 +5,6 @@ import {
   FaTrash,
   FaTimes,
   FaPhone,
-  FaEnvelope,
   FaMapMarkerAlt,
   FaCalendarAlt,
   FaBullhorn,

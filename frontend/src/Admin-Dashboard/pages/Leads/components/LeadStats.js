@@ -3,7 +3,6 @@ import {
   FaUsers,
   FaUserPlus,
   FaHandshake,
-  FaCalendarCheck,
   FaMoneyBillWave,
   FaArrowTrendUp,
   FaArrowTrendDown,

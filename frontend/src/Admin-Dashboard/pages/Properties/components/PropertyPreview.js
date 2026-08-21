@@ -6,7 +6,6 @@ import {
   FaMapMarkerAlt,
   FaExpandArrowsAlt,
   FaHome,
-  FaTag,
 } from "react-icons/fa";
 import "../styles/PropertyPreview.css";
 export default function PropertyPreview({ property }) {

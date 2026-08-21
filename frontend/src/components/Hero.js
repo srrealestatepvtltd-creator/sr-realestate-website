@@ -1,5 +1,4 @@
 import React from "react";
-import CountUp from "react-countup";
 import { motion } from "framer-motion";
 import "../styles/Hero.css";
 import ContactForm from "../pages/ContactUs-Section/components/ContactForm";
